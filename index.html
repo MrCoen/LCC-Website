@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/css/index.css">
+      <link rel="shortcut icon" href="/images/">
+      <title>LCC Elites - Home</title>
+   </head>
+   <body>
+      <!-- onload="loadering()" -->
+      <!-- <div id="loader"></div> -->
+      <div id="advert" class="advert">
+         <img src="./images/chatremix.png" alt="">
+         <p>Download Chat Remix <a target="_blank" href="http://chatremix.com/">NOW</a> !</p>
+         <i class="fas fa-times" id="arrow2" onclick="closead()"></i>
+      </div>
+      <div class="mobile-design">
+        <div class="topnav">
+         <a href="#home" class="active">LCC Elites</a>
+         <div id="myLinks">
+            <a href="./pages/projects.html">Projects</a>
+            <a href="./pages/tools.html">Tools</a>
+            <a href="./pages/credits.html">Developers</a>
+         </div>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </div>
+      <div class="mobile-content">
+         <div class="mobile-section">
+           <h1 class="title">LCC Elites</h1>
+           <p class="mobile-desc">Welcome to "The best of the best".</p>
+         </div>
+      </div>
+      </div>
+      
+
+
+      <div class="website">
+         <div class="website-item first-child">
+            <div class="left-nav-item">
+               <div class="nav-header">
+                  <img class="nav-image" src="../images/hackerface.png" alt=""> 
+                  <h1 class="nav-title">LCC ELITES</h1>
+               </div>
+            </div>
+            <div class="left-nav-item">
+               <div class="nav-options">
+                  <div class="nav-option-item" onclick="openclose1()">
+                     <div class="option-title">
+                        <h1>Navigation</h1>
+                        <i class="fas fa-angle-right" id="arrow2"></i>
+                     </div>
+                     <div class="nav-item-content closed" id="content2">
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="redirprojects()">Projects</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="redirtools()">Tools</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="redircredits()">Developers</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="website-item second-child" id="whatopen">
+            <section  id="main-home">
+               <div class="home-item">
+                  <div class="container">
+                     <p class="glitch">
+                        <span aria-hidden="true">Welcome to LCC Elites Project Bank</span>
+                        Welcome to LCC Elites Project Bank
+                        <span aria-hidden="true">Welcome to LCC Elites Project Bank</span>
+                     </p>
+                  </div>
+               </div>
+               <div class="home-item">
+                  <p class="summary">Welcome to The "the best of the best", this website was created by some of your fellow students to help you keep all your tools and projects in one place making it easy to share them with eachother.</p>
+               </div>
+            </section>
+         </div>
+      </div>
+      </div>
+   </body>
+   <!-- glitch text -->
+   <!-- end of glitch text -->
+   <script src="https://kit.fontawesome.com/858ff2992b.js" crossorigin="anonymous"></script>
+   <script>
+      function closead(){
+        const ad = document.getElementById('advert')
+      
+        if(!ad.classList.contains("closed")){
+          ad.classList.add("closed")
+          ad.classList.remove("open")
+        }else{
+          ad.classList.remove("closed")
+          as.classList.add("open")
+        }
+      }
+      
+      function openclose(){
+          const item = document.getElementById('content1');
+          const arrow = document.getElementById('arrow')
+      
+          if(item.classList.contains("closed")){
+            item.classList.remove("closed")
+            item.classList.add("open")
+            arrow.classList.remove("fa-angle-right")
+            arrow.classList.add("fa-angle-down")
+      
+          } else if(item.classList.contains("open")){
+            item.classList.remove("open")
+            item.classList.add("closed")
+            arrow.classList.remove("fa-angle-down")
+            arrow.classList.add("fa-angle-right")
+      
+          }
+        }
+        function openclose1(){
+          const item = document.getElementById('content2');
+          const arrow = document.getElementById('arrow2')
+      
+          if(item.classList.contains("closed")){
+            item.classList.remove("closed")
+            item.classList.add("open")
+            arrow.classList.remove("fa-angle-right")
+            arrow.classList.add("fa-angle-down")
+      
+          } else if(item.classList.contains("open")){
+            item.classList.remove("open")
+            item.classList.add("closed")
+            arrow.classList.remove("fa-angle-down")
+            arrow.classList.add("fa-angle-right")
+      
+          }
+        }
+      
+        function redirhome(){
+          window.location.href = "./index.html"
+        }
+      
+        function redircredits(){
+          window.location.href = "./pages/credits.html"
+        }
+      
+        function redirprojects(){
+          window.location.href = "./pages/projects.html"
+        }
+        function redirtools(){
+          window.location.href = "./pages/tools.html"
+        }
+        function redircrypto(){
+          window.location.href = "./pages/crypto.html"
+        }
+      
+        function openddos(){
+          const ddos = document.getElementById("ddos-tool")
+          ddos.classList.remove("closed")
+          ddos.classList.add("open")
+          window.location.href = "#ddos-tool";
+        }
+      var myVar;
+      
+      function loadering() {
+      myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("body").style.display = "block";
+      }
+
+      function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+   </script>
+</html>

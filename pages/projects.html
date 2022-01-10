@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/projects.css">
+      <title>LCC - Projects</title>
+   </head>
+   <body>
+      <div id="advert" class="advert">
+       <img src="../images/chatremix.png" alt="">
+       <p>Download Chat Remix <a target="_blank" href="http://chatremix.com/">NOW</a> !</p>
+        <i class="fas fa-times" id="arrow2" onclick="closead()"></i>
+     </div>
+      <div class="mobile-design">
+         <div class="topnav">
+            <a href="#home" class="active">LCC ELites</a>
+            <div id="myLinks">
+               <a href="../index.html">Home</a>
+               <a href="./tools.html">Tools</a>
+               <a href="./credits.html">Developers</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+         </div>
+         <div class="mobile-content">
+            <div class="mobile-section">
+               <div class="mob-upload">
+                  <p>Upload Files</p>
+                  <a href="mailto:b552853@leedscitycollege.ac.uk?subject=Upload File To LCC Elites"><i class="fas fa-upload"></i></a>
+               </div>
+            </div>
+            <div class="mobile-section">
+               <div class="tools-mobile">
+                  <div class="mob-tool">
+                     <div class="mob-title">
+                        <h1>Ports Scanner</h1>
+                        <i class="fas fa-angle-down"></i>
+                     </div>
+                     <div class="mob-image">
+                        <img src="../images/tjtool.png" alt="">
+                     </div>
+                     <div class="mob-desc">
+                        <p>This is a project made by Dylan and Jayden and is made to scan a selected amount of ports on a network.</p>
+                     </div>
+                     <div class="mob-download">
+                        <a download="../downloads/main.py" ><button class="download-mob">Download</button></a>
+                     </div>
+                  </div>
+                  <div class="mob-tool">
+                     <div class="mob-title">
+                        <h1>Block Chain</h1>
+                        <i class="fas fa-angle-down"></i>
+                     </div>
+                     <div class="mob-image">
+                        <img src="../images/blockchain.png" alt="">
+                     </div>
+                     <div class="mob-desc">
+                        <p>Made by Josh this is a Python script that asks users for their name, who they are sending J2 coin too(fictional cryptocurrency) and how much they're sending. it then creates a "block" and prints the transaction details in words and prints the hash number of the block.</p>
+                     </div>
+                     <div class="mob-download">
+                        <a download="../downloads/main.py" ><button class="download-mob">Download</button></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="website">
+         <div class="website-item first-child">
+            <div class="left-nav-item">
+               <div class="nav-header">
+                  <img class="nav-image" src="../images/hackerface.png" alt=""> 
+                  <h1 class="nav-title">LCC ELITES</h1>
+               </div>
+            </div>
+            <div class="left-nav-item">
+               <div class="nav-options">
+                  <div class="nav-option-item" onclick="openclose1()">
+                     <div class="option-title">
+                        <h1>Navigation</h1>
+                        <i class="fas fa-angle-right" id="arrow2"></i>
+                     </div>
+                     <div class="nav-item-content closed" id="content2">
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="redirhome()">Home</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="redirtools()">Tools</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="redircredits()">Developers</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="nav-option-item split">
+                     <div class="option-splitter">
+                        <h2 class="splitter-text">T-Level Project Bank</h2>
+                     </div>
+                  </div>
+                  <div class="nav-option-item" onclick="openclose3()">
+                     <div class="option-title">
+                        <div class="filler">
+                           <i class="fas fa-wifi"></i>
+                           <h1>Port Scanner</h1>
+                        </div>
+                        <i class="fas fa-angle-right" id="arrow3"></i>
+                     </div>
+                     <div class="nav-item-content closed" id="content3">
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="openport()">Information</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="openport()">Download</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="nav-option-item" onclick="openclose4()">
+                     <div class="option-title">
+                        <div class="filler">
+                           <i class="fas fa-server"></i>
+                           <h1>Simple Blockchain</h1>
+                        </div>
+                        <i class="fas fa-angle-right" id="arrow4"></i>
+                     </div>
+                     <div class="nav-item-content closed" id="content4">
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="openblock()">Information</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="openblock()">Download</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="nav-option-item split">
+                     <div class="option-splitter">
+                        <h2 class="splitter-text">Add Projects</h2>
+                     </div>
+                  </div>
+                  <div class="nav-option-item" onclick="upload()">
+                     <div class="option-title">
+                        <div class="filler">
+                           <i class="fas fa-upload"></i>
+                           <h1>Upload</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="website-item second-child" id="whatopen">
+            <section  id="main-home">
+               <div class="home-item">
+                  <h1>Project Bank</h1>
+               </div>
+               <div class="home-item">
+                  <img src="../images/server.svg" alt="">
+               </div>
+            </section>
+            <section class="closed portscanner-tool" id="portscanner-tool">
+               <div class="ddos-item">
+                  <h1 class="ddos-title">
+                     Port Scanner
+                  </h1>
+               </div>
+               <section class="ddos-item" id="information">
+                  <h1>Information</h1>
+                  <img src="../images/tjtool.png" alt="" class="ddos-image"> 
+                  <p>This tool was made by Dylan and Jayden this was made for you to scan ports on a given ip, the port scanner is quick and you can select how many ports you would like to scan.</p>
+               </section>
+               <section class="ddos-item" id="download">
+                  <h1>Download</h1>
+                  <p>To download click the button below.</p>
+                  <a href="" download="../downloads/main.py"><button class="download" download="../downloads/main.py">Download</button></a>
+               </section>
+            </section>
+            <section class="closed blockchain-tool" id="blockchain-tool">
+               <div class="ddos-item">
+                  <h1 class="ddos-title">
+                     Blockchain Tool
+                  </h1>
+               </div>
+               <section class="ddos-item" id="information">
+                  <h1>Information</h1>
+                  <img src="../images/blockchain.png" alt="" class="ddos-image"> 
+                  <p>Python script that asks users for their name, who they are sending J2 coin too(fictional cryptocurrency) and how much they're sending. it then creates a "block" and prints the transaction details in words and prints the hash number of the block.</p>
+               </section>
+               <section class="ddos-item" id="download">
+                  <h1>Download</h1>
+                  <p>If you are wanting the source code for this project would will have to get in touch with <a target="_blank" href="https://discord.com">joshstoykss#9223</a> for him to give you access. </p>
+               </section>
+            </section>
+            <section class="closed ddos-tool" id="upload">
+               <section class="ddos-item" id="information">
+                  <h1>How to upload files</h1>
+                  <p>We would love to share your projects with the college, if you would like your project feature on the page then you can upload them via the button below</p>
+                  <a target="_blank" href="mailto:b552853@leedscitycollege.ac.uk?subject=Upload File To LCC Elites"><button class="download">Upload</button></a>
+               </section>
+            </section>
+         </div>
+      </div>
+      <script src="https://kit.fontawesome.com/858ff2992b.js" crossorigin="anonymous"></script>
+      <script>
+        function closead(){
+          const ad = document.getElementById('advert')
+        
+          if(!ad.classList.contains("closed")){
+            ad.classList.add("closed")
+            ad.classList.remove("open")
+          }else{
+            ad.classList.remove("closed")
+            ad.classList.add("open")
+          }
+        }
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+         }
+         }
+           function openclose(){
+             const item = document.getElementById('content1');
+             const arrow = document.getElementById('arrow')
+         
+             if(item.classList.contains("closed")){
+               item.classList.remove("closed")
+               item.classList.add("open")
+               arrow.classList.remove("fa-angle-right")
+               arrow.classList.add("fa-angle-down")
+         
+             } else if(item.classList.contains("open")){
+               item.classList.remove("open")
+               item.classList.add("closed")
+               arrow.classList.remove("fa-angle-down")
+               arrow.classList.add("fa-angle-right")
+         
+             }
+           }
+           function openclose1(){
+             const item = document.getElementById('content2');
+             const arrow = document.getElementById('arrow2')
+         
+             if(item.classList.contains("closed")){
+               item.classList.remove("closed")
+               item.classList.add("open")
+               arrow.classList.remove("fa-angle-right")
+               arrow.classList.add("fa-angle-down")
+         
+             } else if(item.classList.contains("open")){
+               item.classList.remove("open")
+               item.classList.add("closed")
+               arrow.classList.remove("fa-angle-down")
+               arrow.classList.add("fa-angle-right")
+         
+             }
+           }
+         
+           function openclose3(){
+             const item = document.getElementById('content3');
+             const arrow = document.getElementById('arrow3')
+         
+             if(item.classList.contains("closed")){
+               item.classList.remove("closed")
+               item.classList.add("open")
+               arrow.classList.remove("fa-angle-right")
+               arrow.classList.add("fa-angle-down")
+         
+             } else if(item.classList.contains("open")){
+               item.classList.remove("open")
+               item.classList.add("closed")
+               arrow.classList.remove("fa-angle-down")
+               arrow.classList.add("fa-angle-right")
+         
+             }
+           }
+         
+           function openclose4(){
+             const item = document.getElementById('content4');
+             const arrow = document.getElementById('arrow4')
+         
+             if(item.classList.contains("closed")){
+               item.classList.remove("closed")
+               item.classList.add("open")
+               arrow.classList.remove("fa-angle-right")
+               arrow.classList.add("fa-angle-down")
+         
+             } else if(item.classList.contains("open")){
+               item.classList.remove("open")
+               item.classList.add("closed")
+               arrow.classList.remove("fa-angle-down")
+               arrow.classList.add("fa-angle-right")
+         
+             }
+           }
+         
+           function redirhome(){
+             window.location.href = "../index.html"
+           }
+         
+           function redircredits(){
+             window.location.href = "./credits.html"
+           }
+         
+           function redirtools(){
+             window.location.href = "./tools.html"
+           }
+      </script>
+      <script>
+         function upload(){
+           const ddos = document.getElementById("upload")
+           ddos.classList.remove("closed")
+           ddos.classList.add("open")
+           window.location.href = "#upload";
+         }
+         
+         function openblock(){
+           const ddos = document.getElementById("blockchain-tool")
+           ddos.classList.remove("closed")
+           ddos.classList.add("open")
+           window.location.href = "#blockchain-tool";
+         }
+         function openport(){
+           const port = document.getElementById("portscanner-tool")
+           port.classList.remove("closed")
+           port.classList.add("open")
+           window.location.href = "#portscanner-tool";
+         }
+         
+         
+         
+      </script>
+   </body>
+</html>

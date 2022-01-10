@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/tools.css">
+  <title>LCC - Tools</title>
+</head>
+<body>
+
+      <div class="mobile-design">
+        <div class="topnav">
+         <a href="#home" class="active">LCC ELites</a>
+         <div id="myLinks">
+            <a href="../index.html">Home</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./credits.html">Developers</a>
+         </div>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </div>
+      <div class="mobile-content">
+            <div class="tools-mobile">
+             <div class="mob-tool">
+               <div class="mob-title">
+                <h1>Ports Scanner</h1>
+                <i class="fas fa-angle-down"></i>
+               </div>
+               <div class="mob-image">
+                 <img src="../images/tjtool.png" alt="">
+               </div>
+               <div class="mob-desc">
+                <p>This is a project made by Dylan and Jayden and is made to scan a selected amount of ports on a network.</p>
+               </div>
+               <div class="mob-download">
+                <a download="../downloads/main.py" ><button class="download-mob">Download</button></a>
+               </div>
+             </div>
+             <div class="mob-tool">
+               <div class="mob-title">
+                <h1>DDOX Tool</h1>
+                <i class="fas fa-angle-down"></i>
+               </div>
+               <div class="mob-image">
+                 <img src="../images/tjtool.png" alt="">
+               </div>
+               <div class="mob-desc">
+                <p>This tool is not yet availiable for public use as of how dangerous and malicious it is if you would like access to the tool message Effortless#7382 on discord.</p>
+               </div>
+               <div class="mob-download">
+                <a><button class="download-mob">Download</button></a>
+               </div>
+             </div>
+           </div>
+      </div>
+      </div>
+
+  <div class="website">
+
+         <div id="advert" class="advert">
+       <img src="../images/chatremix.png" alt="">
+       <p>Download Chat Remix <a target="_blank" href="http://chatremix.com/">NOW</a> !</p>
+        <i class="fas fa-times" id="arrow2" onclick="closead()"></i>
+     </div>
+
+    <div class="website-item first-child">
+      <div class="left-nav-item">
+        <div class="nav-header">
+          <img class="nav-image" src="../images/hackerface.png" alt=""> <h1 class="nav-title">LCC ELITES</h1>
+        </div>
+      </div>
+      <div class="left-nav-item">
+        <div class="nav-options">
+
+          <div class="nav-option-item" onclick="openclose1()">
+            <div class="option-title">
+              <h1>Navigation</h1>
+              <i class="fas fa-angle-right" id="arrow2"></i>
+            </div>
+            <div class="nav-item-content closed" id="content2">
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="redirhome()">Home</h3>
+              </div>
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="redirprojects()">Projects</h3>
+              </div>
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="redircredits()">Developers</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-option-item split">
+            <div class="option-splitter">
+              <h2 class="splitter-text">Tools</h2>
+            </div>
+          </div>
+
+          <div class="nav-option-item" onclick="openclose()">
+            <div class="option-title">
+              <div class="filler">
+                <i class="fas fa-globe"></i>
+                <h1>DOXING Tool</h1>
+              </div>
+              <i class="fas fa-angle-right" id="arrow"></i>
+            </div>
+            <div class="nav-item-content closed" id="content1">
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="openddos()">Information</h3>
+              </div>
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="openddos()">Download</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-option-item" onclick="openclose3()">
+            <div class="option-title">
+              <div class="filler">
+                <i class="fas fa-wifi"></i>
+                <h1>Port Scanner</h1>
+              </div>
+              <i class="fas fa-angle-right" id="arrow3"></i>
+            </div>
+            <div class="nav-item-content closed" id="content3">
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="openport()">Information</h3>
+              </div>
+              <div class="content-item">
+                <h3 class="content-item-title" onclick="openport()">Download</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-option-item split">
+            <div class="option-splitter">
+              <h2 class="splitter-text">Misc</h2>
+            </div>
+          </div>
+
+          <div class="nav-option-item" onclick="closecalc()">
+            <div class="option-title">
+              <div class="filler">
+                <i class="fas fa-calculator"></i>
+                <h1>Calculator</h1>
+              </div>
+              <i class="fas fa-angle-right" id="arrow4"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="website-item second-child" id="whatopen">
+
+      <div id="mydiv" class="closed">
+      <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+      <div id="mydivheader">
+        <h1>Calculator</h1>
+        <i class="fas fa-times" onclick="closecalc()"></i>
+      </div>
+      <div class="container">
+    <div class="result">
+      <p id="result-box">0</p>
+    </div>
+
+
+    <div class="buttons">
+      <div class="button action-btn" id="clear"> AC </div>
+      <div class="button action-btn"> MC</div>
+      <div class="button num-button  action-btn"> %</div>
+      <div class="button num-button  calc-action-btn"> /</div>
+      <div class="button num-button seven">7</div>
+      <div class="button num-button eight">8</div>
+      <div class="button num-button  nine">9</div>
+      <div class="button num-button  calc-action-btn">*</div>
+      <div class="button num-button  four">4</div>
+      <div class="button num-button  five">5</div>
+      <div class="button num-button  six">6</div>
+      <div class="button num-button  calc-action-btn">-</div>
+      <div class="button num-button  one">1</div>
+      <div class="button num-button  two">2</div>
+      <div class="button num-button  three">3</div>
+      <div class="button num-button  calc-action-btn">+</div>
+      <div class="button num-button  zero">0</div>
+      <div class="button num-button  point">.</div>
+      <div class="button calc-action-btn" id="total">=</div>
+    </div>
+
+  </div>
+      </div>
+
+      <section  id="main-home">
+        <div class="home-item">
+          <h1>Released Tools</h1>
+        </div>
+        <div class="home-item">
+          <img src="../images/tasklist.svg" alt="">
+        </div>
+      </section>
+
+      <section class="closed ddos-tool" id="ddos-tool">
+        <div class="ddos-item">
+          <h1 class="ddos-title">
+            TJ's Networking Tool
+          </h1>
+        </div>
+        <section class="ddos-item" id="information">
+          <h1>Information</h1>
+          <img src="../images/tjtool.png" alt="" class="ddos-image"> 
+          <p>This tool was made by TJ and was co developed by Dylan and Jayden, This tool is extremely powerful therefore downloads will be restricted. If you would like to own this tool or pay for services get in touch with us on discord @ <a target="_blank" href="https://discord.com">Effortless#7382</a>  or <a href="https://discord.com" target="_blank">Tjay#7724</a> . <br>This tool includes a full port scanner which can allow you to scan as many ports as you would like, another feature that this too has is that you dont just have to dox an ip you can dox web addresses too. The final thing that was added to this update was a Ip location tracker which will locate the last ping from the device you are tracking.</p>
+        </section>
+        <section class="ddos-item" id="download">
+          <h1>Download</h1>
+          <p>As we said above you cannot download this tool yet, get in touch with us on discord at the tags provided above. We hope to have a system set up soon so we can monitor people using the tool but for now downloads will be limited.</p>
+        </section>
+      </section>
+
+      <section class="closed portscanner-tool" id="portscanner-tool">
+        <div class="ddos-item">
+          <h1 class="ddos-title">
+            Port Scanner
+          </h1>
+        </div>
+        <section class="ddos-item" id="information">
+          <h1>Information</h1>
+          <img src="../images/tjtool.png" alt="" class="ddos-image"> 
+          <p>This tool was made by Dylan and Jayden this was made for you to scan ports on a given ip, the port scanner is quick and you can select how many ports you would like to scan.</p>
+        </section>
+        <section class="ddos-item" id="download">
+          <h1>Download</h1>
+          <p>To download click the button below.</p>
+          <a href="" download="../downloads/main.py"><button class="download" download="../downloads/main.py">Download</button></a>
+        </section>
+      </section>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/858ff2992b.js" crossorigin="anonymous"></script>
+  <script>
+
+    function closead(){
+        const ad = document.getElementById('advert')
+      
+        if(!ad.classList.contains("closed")){
+          ad.classList.add("closed")
+          ad.classList.remove("open")
+        }else{
+          ad.classList.remove("closed")
+          as.classList.add("open")
+        }
+    }
+
+    function openclose(){
+      const item = document.getElementById('content1');
+      const arrow = document.getElementById('arrow')
+
+      if(item.classList.contains("closed")){
+        item.classList.remove("closed")
+        item.classList.add("open")
+        arrow.classList.remove("fa-angle-right")
+        arrow.classList.add("fa-angle-down")
+
+      } else if(item.classList.contains("open")){
+        item.classList.remove("open")
+        item.classList.add("closed")
+        arrow.classList.remove("fa-angle-down")
+        arrow.classList.add("fa-angle-right")
+
+      }
+    }
+    function openclose1(){
+      const item = document.getElementById('content2');
+      const arrow = document.getElementById('arrow2')
+
+      if(item.classList.contains("closed")){
+        item.classList.remove("closed")
+        item.classList.add("open")
+        arrow.classList.remove("fa-angle-right")
+        arrow.classList.add("fa-angle-down")
+
+      } else if(item.classList.contains("open")){
+        item.classList.remove("open")
+        item.classList.add("closed")
+        arrow.classList.remove("fa-angle-down")
+        arrow.classList.add("fa-angle-right")
+
+      }
+    }
+
+    function openclose3(){
+      const item = document.getElementById('content3');
+      const arrow = document.getElementById('arrow3')
+
+      if(item.classList.contains("closed")){
+        item.classList.remove("closed")
+        item.classList.add("open")
+        arrow.classList.remove("fa-angle-right")
+        arrow.classList.add("fa-angle-down")
+
+      } else if(item.classList.contains("open")){
+        item.classList.remove("open")
+        item.classList.add("closed")
+        arrow.classList.remove("fa-angle-down")
+        arrow.classList.add("fa-angle-right")
+
+      }
+    }
+
+    function openclose4(){
+      const item = document.getElementById('content4');
+      const arrow = document.getElementById('arrow4')
+
+      if(item.classList.contains("closed")){
+        item.classList.remove("closed")
+        item.classList.add("open")
+        arrow.classList.remove("fa-angle-right")
+        arrow.classList.add("fa-angle-down")
+
+      } else if(item.classList.contains("open")){
+        item.classList.remove("open")
+        item.classList.add("closed")
+        arrow.classList.remove("fa-angle-down")
+        arrow.classList.add("fa-angle-right")
+
+      }
+    }
+
+    function redirhome(){
+      window.location.href = "../index.html"
+    }
+
+    function redircredits(){
+      window.location.href = "./credits.html"
+    }
+
+    function redirprojects(){
+      window.location.href = "./projects.html"
+    }
+  </script>
+  <script>
+
+    dragElement(document.getElementById("mydiv"));
+
+    function dragElement(elmnt) {
+      var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      if (document.getElementById(elmnt.id + "header")) {
+        // if present, the header is where you move the DIV from:
+        document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+      } else {
+        // otherwise, move the DIV from anywhere inside the DIV:
+        elmnt.onmousedown = dragMouseDown;
+      }
+
+      function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+      }
+
+      function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      }
+
+      function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+      }
+    }
+
+    function openddos(){
+      const ddos = document.getElementById("ddos-tool")
+      ddos.classList.remove("closed")
+      ddos.classList.add("open")
+      window.location.href = "#ddos-tool";
+    }
+    function openport(){
+      const port = document.getElementById("portscanner-tool")
+      port.classList.remove("closed")
+      port.classList.add("open")
+      window.location.href = "#portscanner-tool";
+    }
+
+    let btns = document.querySelectorAll(".num-button");
+      let allBtns = document.querySelectorAll(".button");
+      let resultBox = document.querySelector("#result-box");
+      let clearBtn = document.querySelector('#clear');
+
+      let total = document.querySelector("#total");
+
+      let btnSpread = [...btns];
+      let allBtnSpread = [...allBtns];
+
+      // For Number Inputs
+      btnSpread.forEach((button, i) => {
+        button.addEventListener("click", () => {
+          // Inner Values for calculator
+
+          if (resultBox.innerHTML == "0") {
+            resultBox.innerHTML = "";
+          }
+
+          let value = btns[i].innerHTML;
+          resultBox.innerHTML += value;
+        });
+      });
+
+
+      // Function to evalute Strings
+      function evaluate(fn) {
+          return new Function('return ' + fn)();
+      }
+
+      // To calculate All Input
+      total.addEventListener('click', ()=> {
+      let allInputs = resultBox.innerHTML;
+
+      resultBox.innerHTML = evaluate(allInputs);
+
+      console.log(evaluate(allInputs));
+      })
+
+      // Clear all Inputs
+      clearBtn.addEventListener('click', ()=> {
+          resultBox.innerHTML = "0";
+      })
+
+    function closecalc(){
+      const calc = document.getElementById('mydiv')
+
+      if(calc.classList.contains('open')){
+        calc.classList.remove('open')
+        calc.classList.add('closed')
+      }else{
+        calc.classList.remove('closed')
+        calc.classList.add('open')
+      }
+    }
+
+          function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
+</body>
+</html>
