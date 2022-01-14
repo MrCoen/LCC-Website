@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 
 #loader{
@@ -53,7 +56,7 @@ body{
 .nav-title{
   color:#e1e1e1;
   text-decoration: underline;
-  text-decoration-color: lime;
+  text-decoration-color: #00ff00;
   line-height: 48px;
   font-size:18px;
   font-family: 'Archivo Black', sans-serif;
@@ -509,7 +512,7 @@ h1{
     width:80vw;
     margin:auto;
     top: 70px;
-    right:-500px;
+    right:-1000px;
     -webkit-animation: slide-mob 0.5s forwards;
     -webkit-animation-delay: 2s;
     animation: slidead-mob 0.5s forwards;

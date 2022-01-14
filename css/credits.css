@@ -9,6 +9,9 @@ body{
   box-sizing: border-box;
 
 }
+a{
+  text-decoration: none;
+}
 
 .mobile-design{
   display:none;
@@ -411,6 +414,7 @@ footer {
 .advert a{
   color:White;
   text-decoration-color: lime;
+  text-decoration: underline;
 }
 
 .closed{
@@ -494,16 +498,7 @@ footer {
 
 
   .advert{
-    align-self: center;
-    width:80vw;
-    margin:auto;
-    top: 70px;
-    right:-500px;
-    -webkit-animation: slide-mob 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slidead-mob 0.5s forwards;
-    animation-delay: 2s;
-    border:1px solid lime;
+    display:none;
   }
 
   .topnav {

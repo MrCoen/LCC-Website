@@ -33,21 +33,7 @@
             </div>
             <div class="mobile-section">
                <div class="tools-mobile">
-                  <div class="mob-tool">
-                     <div class="mob-title">
-                        <h1>Ports Scanner</h1>
-                        <i class="fas fa-angle-down"></i>
-                     </div>
-                     <div class="mob-image">
-                        <img src="../images/tjtool.png" alt="">
-                     </div>
-                     <div class="mob-desc">
-                        <p>This is a project made by Dylan and Jayden and is made to scan a selected amount of ports on a network.</p>
-                     </div>
-                     <div class="mob-download">
-                        <a download="../downloads/main.py" ><button class="download-mob">Download</button></a>
-                     </div>
-                  </div>
+                  
                   <div class="mob-tool">
                      <div class="mob-title">
                         <h1>Block Chain</h1>
@@ -63,6 +49,22 @@
                         <a download="../downloads/main.py" ><button class="download-mob">Download</button></a>
                      </div>
                   </div>
+
+                  <div class="mob-tool">
+                     <div class="mob-title">
+                        <h1>Number Sorting</h1>
+                        <i class="fas fa-angle-down"></i>
+                     </div>
+                     <div class="mob-image">
+                        <img src="../images/number.png" alt="">
+                     </div>
+                     <div class="mob-desc">
+                        <p>This small project was made by dylan, it takes in an array of numbers and sorts them into different collections.</p>
+                     </div>
+                     <div class="mob-download">
+                        <a download="../downloads/questions.py" ><button class="download-mob">Download</button></a>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -72,7 +74,7 @@
             <div class="left-nav-item">
                <div class="nav-header">
                   <img class="nav-image" src="../images/hackerface.png" alt=""> 
-                  <h1 class="nav-title">LCC ELITES</h1>
+                  <a href="../index.html"><h1 class="nav-title">LCC ELITES</h1></a>
                </div>
             </div>
             <div class="left-nav-item">
@@ -99,28 +101,12 @@
                         <h2 class="splitter-text">T-Level Project Bank</h2>
                      </div>
                   </div>
-                  <div class="nav-option-item" onclick="openclose3()">
-                     <div class="option-title">
-                        <div class="filler">
-                           <i class="fas fa-wifi"></i>
-                           <h1>Port Scanner</h1>
-                        </div>
-                        <i class="fas fa-angle-right" id="arrow3"></i>
-                     </div>
-                     <div class="nav-item-content closed" id="content3">
-                        <div class="content-item">
-                           <h3 class="content-item-title" onclick="openport()">Information</h3>
-                        </div>
-                        <div class="content-item">
-                           <h3 class="content-item-title" onclick="openport()">Download</h3>
-                        </div>
-                     </div>
-                  </div>
+                  
                   <div class="nav-option-item" onclick="openclose4()">
                      <div class="option-title">
                         <div class="filler">
                            <i class="fas fa-server"></i>
-                           <h1>Simple Blockchain</h1>
+                           <h1>Blockchain</h1>
                         </div>
                         <i class="fas fa-angle-right" id="arrow4"></i>
                      </div>
@@ -130,6 +116,24 @@
                         </div>
                         <div class="content-item">
                            <h3 class="content-item-title" onclick="openblock()">Download</h3>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="nav-option-item" onclick="openclose3()">
+                     <div class="option-title">
+                        <div class="filler">
+                           <i class="fas fa-list-ol"></i>
+                           <h1>Number Sorting</h1>
+                        </div>
+                        <i class="fas fa-angle-right" id="arrow5"></i>
+                     </div>
+                     <div class="nav-item-content closed" id="content5">
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="opennum()">Information</h3>
+                        </div>
+                        <div class="content-item">
+                           <h3 class="content-item-title" onclick="opennum()">Download</h3>
                         </div>
                      </div>
                   </div>
@@ -158,21 +162,21 @@
                   <img src="../images/server.svg" alt="">
                </div>
             </section>
-            <section class="closed portscanner-tool" id="portscanner-tool">
+            <section class="closed number-tool" id="number-tool">
                <div class="ddos-item">
                   <h1 class="ddos-title">
-                     Port Scanner
+                     Number Sorting
                   </h1>
                </div>
                <section class="ddos-item" id="information">
                   <h1>Information</h1>
-                  <img src="../images/tjtool.png" alt="" class="ddos-image"> 
-                  <p>This tool was made by Dylan and Jayden this was made for you to scan ports on a given ip, the port scanner is quick and you can select how many ports you would like to scan.</p>
+                  <img src="../images/number.png" alt="" class="ddos-image"> 
+                  <p>This small project was made by dylan, it takes in an array of numbers and sorts them into different collections.</p>
                </section>
                <section class="ddos-item" id="download">
                   <h1>Download</h1>
                   <p>To download click the button below.</p>
-                  <a href="" download="../downloads/main.py"><button class="download" download="../downloads/main.py">Download</button></a>
+                  <a href="" download="../downloads/quesitons.py"><button class="download" download="../downloads/main.py">Download</button></a>
                </section>
             </section>
             <section class="closed blockchain-tool" id="blockchain-tool">
@@ -259,8 +263,8 @@
            }
          
            function openclose3(){
-             const item = document.getElementById('content3');
-             const arrow = document.getElementById('arrow3')
+             const item = document.getElementById('content5');
+             const arrow = document.getElementById('arrow5')
          
              if(item.classList.contains("closed")){
                item.classList.remove("closed")
@@ -295,7 +299,8 @@
          
              }
            }
-         
+
+
            function redirhome(){
              window.location.href = "../index.html"
            }
@@ -316,18 +321,53 @@
            window.location.href = "#upload";
          }
          
+        //  function openblock(){
+        //    const ddos = document.getElementById("blockchain-tool")
+        //    ddos.classList.remove("closed")
+        //    ddos.classList.add("open")
+        //    window.location.href = "#blockchain-tool";
+        //  }
+
+        //  function opennum(){
+        //    const port = document.getElementById("number-tool")
+        //    port.classList.remove("closed")
+        //    port.classList.add("open")
+        //    window.location.href = "#number-tool";
+        //  }
+
+         function opennum(){
+          const closeitem = document.getElementsByClassName('open')
+          const openitem = document.getElementById("number-tool")
+          
+          for(i = 0; i < closeitem.length; i++){
+            closeitem[i].classList.remove('open') 
+            closeitem[i].classList.add('closed')
+          }
+
+          openitem.classList.add('open')
+          openitem.classList.remove('closed')
+           window.location.href = "#number-tool"
+
+         }
+
          function openblock(){
-           const ddos = document.getElementById("blockchain-tool")
-           ddos.classList.remove("closed")
-           ddos.classList.add("open")
-           window.location.href = "#blockchain-tool";
+          const closeitem = document.getElementsByClassName('open')
+          const openitem = document.getElementById("blockchain-tool")
+          
+          for(i = 0; i < closeitem.length; i++){
+            if(closeitem[i].classList.contains('open')){
+              closeitem[i].classList.remove('open') && closeitem[i].classList.add('closed')
+            }
+          }
+
+          openitem.classList.add('open')
+          openitem.classList.remove('closed')
+          window.location.href = "#blockchain-tool"
+
+          
          }
-         function openport(){
-           const port = document.getElementById("portscanner-tool")
-           port.classList.remove("closed")
-           port.classList.add("open")
-           window.location.href = "#portscanner-tool";
-         }
+
+         
          
          
          
